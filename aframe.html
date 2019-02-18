@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>VRテスト</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script src="aframe-latest.js"></script>
+<!-- <script src="https://aframe.io/releases/latest/aframe.min.js"></script> -->
+</head>
+<body>
+<a-scene>
+　<a-cube position="0 0 0" color="lightblue"></a-cube>
+　<a-sphere position="-2 -2 -1" color="pink"></a-sphere>
+　<a-cylinder position="2 -5 -1" color="gold"></a-cylinder>
+　<a-sky color="#ccc"></a-sky>
+
+
+  <a-cube
+    color="#0095DD"
+    rotation="20 40 0"
+    position="0 3 0">
+    <a-animation
+      attribute="rotation"
+      from="20 0 0"
+      to="20 360 0"
+      direction="alternate"
+      dur="4000"
+      repeat="indefinite"
+      easing="ease">
+    </a-animation>
+  </a-cube>
+
+
+</a-scene>
+</body>
+</html>
